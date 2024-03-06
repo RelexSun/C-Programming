@@ -3,19 +3,19 @@
 
 int main() {
   // challenge 1
-//   int hour, min, sec;
+  // int hour, min, sec;
 
-//   printf("Enter hour: ");
-//   scanf("%d", &hour);
+  // printf("Enter hour: ");
+  // scanf("%d", &hour);
 
-//   printf("Enter minute: ");
-//   scanf("%d", &min);
+  // printf("Enter minute: ");
+  // scanf("%d", &min);
 
-//   printf("Enter second: ");
-//   scanf("%d", &sec);
+  // printf("Enter second: ");
+  // scanf("%d", &sec);
 
-//   int result = (hour*3600) + (min*60) + sec;
-//   printf("It is %ds\n", result);
+  // int result = (hour*3600) + (min*60) + sec;
+  // printf("It is %ds\n", result);
 
 
 // challenge 2
