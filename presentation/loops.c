@@ -12,5 +12,19 @@ int main () {
     ++j;
   };
 
+int x = 0;
+do {
+  printf("this is do while loop %d\n", x);
+  x++;
+} while (x <= 5);
+
+int y = 0;
+loop: 
+  printf("%d this is goto\n", y);
+  y++;
+  if (y<5) {
+    goto loop;
+  }
+
   return 0;
 }
