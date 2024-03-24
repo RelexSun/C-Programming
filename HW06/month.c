@@ -44,8 +44,8 @@ int main() {
     break;
   
   default:
-  printf("mix khos jhg");
-    break;
+    printf("mix khos jhg");
+  break;
   }
 
   return 0;
