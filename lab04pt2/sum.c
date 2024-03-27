@@ -7,7 +7,7 @@ int main() {
 
 sum = x + y;
 
-if (sum >= 15 || sum <= 20) {
+if (sum >= 15 && sum <= 20) {
   printf("%d", 20);
 
 } else {
