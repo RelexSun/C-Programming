@@ -1,17 +1,18 @@
 #include <stdio.h>
 
 int main() {
-  int x, y;
+  int x, y, sum;
   printf("Enter integers: "); 
   scanf("%d%d", &x, &y);
 
-if ((x == 15 || x == 20) && (y == 15 || y == 20)) {
-  printf("20");
+sum = x + y;
+
+if (sum >= 15 || sum <= 20) {
+  printf("%d", 20);
 
 } else {
-  printf("The sum between %d and %d is %d", x, y, x + y);
-}
-
+  printf("%d", sum);
+  }
 
   return 0;
 }
