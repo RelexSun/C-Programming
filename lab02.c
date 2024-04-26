@@ -35,7 +35,7 @@ int main() {
 // challenge 3
 
 char access[] = "sunsun123";
-
+int inCorrectPass = 0;
 while (1) {
 printf("Enter password: ");
 char pass[20];
@@ -47,8 +47,11 @@ if (strcmp(pass, access) == 0) {
   break;
 
 } else {
-  
+  inCorrectPass++;
   printf("access denied\n");
+  if (inCorrectPass == 3) {
+    
+  }
 };
 
 };
