@@ -1,6 +1,6 @@
 #include<stdio.h>
 
-void isPrime (int num);
+void isPrime (int num); // function protoptype
 
 int main() {
   int num;
@@ -10,12 +10,13 @@ int main() {
 if (num == 1 || num == 2) {
   printf("%d is a prime number", num);
 } else {
-  isPrime(num);
+  isPrime(num); // call function
 }
 
   return 0;
 }
 
+// function declaration
 void isPrime(int num) {
   int isPrime = 1;
 
