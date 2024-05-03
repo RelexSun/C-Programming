@@ -1,6 +1,13 @@
 #include<stdio.h>
 
-void Checker(int num); // function prototype
+// void Checker(int num); // function prototype
+void Checker(int num) {
+  if (num % 2 == 0) {
+    printf("%d is an even number", num);
+  } else {
+    printf("%d is an odd number", num);
+  }
+}
 
 int main() {
   int num;
@@ -13,10 +20,3 @@ int main() {
 }
 
 // function declaration
-void Checker(int num) {
-  if (num % 2 == 0) {
-    printf("%d is an even number", num);
-  } else {
-    printf("%d is an odd number", num);
-  }
-}
