@@ -3,7 +3,9 @@
 int main() {
   // FILE *pF = fopen("test.txt", "w"); // open file with writing mode
 
-   FILE *pF = fopen("test.txt", "a"); // open file with apending mode
+  //TODO: FILE *pF = fopen("file location", "a"); you can also write file in another location
+
+   FILE *pF = fopen("test.txt", "a"); // open file with apending mode 
 
   fprintf(pF, "\nHello I'm writing from c again"); // write file
 
@@ -15,6 +17,20 @@ int main() {
   } else {
     printf("File was NOT deleted");
   }
+
+  /* Read file
+    FILE *pF = fopen("file location", "r");
+    char buffer[255]; will store the first line of text from the file
+
+    if (pF == NULL) {
+      printf("Unable to open file!\n")
+    } else {
+      while( fgets(buffer, 255, pF) != NULL) {
+      printf("%s", buffer);
+    }
+    }
+    fclose(pF);
+  */
 
   return 0;
 }
