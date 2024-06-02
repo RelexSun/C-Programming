@@ -1,9 +1,9 @@
 #include<stdio.h>
 #include <stdbool.h> 
 
-const char* boolToString(bool value) { // convert bool to string
-    return value ? "true" : "false";
-}
+// const char* boolToString(bool value) { // convert bool to string
+//     return value ? "true" : "false";
+// }
 
 int main() {
   int extraCandies, numOfKid;
@@ -20,7 +20,8 @@ int main() {
 
   int length = sizeof(candies)/sizeof(candies[0]);
   printf("The length is %d\n", length);
-  bool boolArray[numOfKid];
+  // bool boolArray[numOfKid];
+  int boolArray[numOfKid];
   
   int temp = candies[0];
   for (int i = 0; i < length; i++) {
@@ -32,14 +33,22 @@ int main() {
 
   for (int i = 0; i < length; i++) {
     if (candies[i] + extraCandies >= temp) {
-      boolArray[i] = true;
+      boolArray[i] = 1;
     } else {
-      boolArray[i] = false;
+      boolArray[i] = 0;
     }
   }
 
+  // for (int i = 0; i < length; i++) {
+  //   printf("Kid %d can have the greatest number of candies: %s\n", i + 1, boolToString(boolArray[i]));
+  // }
+
   for (int i = 0; i < length; i++) {
-    printf("Kid %d can have the greatest number of candies: %s\n", i + 1, boolToString(boolArray[i]));
+    if (boolArray[i]) {
+      printf("true ");
+    } else {
+      printf("false ");
+    }
   }
 
   return 0;
