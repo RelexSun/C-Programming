@@ -1,10 +1,10 @@
 #include<stdio.h>
 
-int greatest(int a, int b) {
-  if (a > b) {
-    return a;
-  }
-  return b;
+int greatest(int x, int y) {
+  if (x > y) {
+    return x;
+  } 
+  return y;
 }
 
 int main() {
