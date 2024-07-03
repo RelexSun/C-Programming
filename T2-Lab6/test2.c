@@ -1,17 +1,14 @@
 #include<stdio.h>
-void addition(int *a , int *b) {
-  *a += *b;
-}
-void swap(int *a, int *b) {
-  int temp = *b; // 11
-  *b = *a; // 2
-  *a = temp; // 9
+
+void addition(int *a, int b){
+  *a = *a + b;
 }
 
-int main() {
-  int a = 9;
-  int b = 2;
-
+int main(){
+  int a, b;
+  printf("Input: ");
+  scanf("%d %d", &a, &b);
+  
   /* pointer point to NULL */
   int *p_a = &a;
 
@@ -19,10 +16,12 @@ int main() {
   printf("Before swap: (a:%d, b:%d)\n", *p_a, b);
 
   /* swap value of a and b */
-  swap(p_a, &b);
+  *p_a = a + b; 
+  b = *p_a - b;
+  a = *p_a - b;
 
   /* display a, b */
-  printf("After swap: (a:%d, b:%d)\n", a, b);
+  printf("After swap: (a:%d, b:%d)\n", *p_a, b);
 
   /* pointer point to b */
   int *p_b = &b;
@@ -31,10 +30,10 @@ int main() {
   printf("Before sum: (a:%d, b:%d)\n", *p_a, *p_b);
 
   /* a equal to a + b */
-  addition(p_a, p_b);
+  addition(&a, b);
 
   /* display a, b */
   printf("After sum: (a:%d, b:%d)\n", *p_a, *p_b);
-
+  
   return 0;
 }
