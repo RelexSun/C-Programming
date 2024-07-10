@@ -5,7 +5,7 @@ int main() {
 
   int sizeOfArray = sizeof(array)/sizeof(array[0]);
 
-  for (int i = 0; i < sizeOfArray; i ++) {
+  for (int i = 0; i < sizeOfArray; i++) { // for (initialize, condition, increment)
     printf("%d\n", array[i]);
   }
 
