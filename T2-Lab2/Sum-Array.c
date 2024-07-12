@@ -28,8 +28,8 @@ void inputMatrix (int row, int col, int matrix[row][col], char name[]) {
 void resultMatrix (int row, int col, int result[row][col], char operation[]) {
     printf("This is the result of %s\n", operation);
   for (int i = 0; i < row; i++) {
-    for (int j = 0; j < col; j++) {
-      printf("%d ", result[i][j]);
+    for (int j = 0; j < col; j++) { 
+      printf("%d ", result[i][j]); 
     }
     printf("\n");
   }

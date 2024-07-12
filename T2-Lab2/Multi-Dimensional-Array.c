@@ -45,8 +45,6 @@ int main() {
     }
   }
 
-
-
   int array1[size], array2[size], sumResult[size], subResult[size];
 
   input(size, array1, 1);
