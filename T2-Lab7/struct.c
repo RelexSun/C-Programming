@@ -9,9 +9,11 @@ typedef struct {
   char color[10];
 } Product;
 
-
 int main() {
-  Product products[5];
+  int amount;
+  printf("Enter number of product");
+  scanf("%d", &amount);
+  Product products[amount];
   char colors[5][10] = {"red", "yellow", "blue", "white", "black"};
 
   for (int i = 0; i < 5; i++) {

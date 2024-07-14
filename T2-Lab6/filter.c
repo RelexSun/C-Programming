@@ -1,15 +1,15 @@
 #include <stdio.h>
 #include <string.h>
 
-void filter(char *str, char c) {
-  char buffer[50];
+void filter(char *str, char c) { 
+  char buffer[50]; 
   int j = 0;
   for (int i = 0; i < strlen(str); i++) {
     if (str[i] != c) {
-      buffer[j++] = str[i];
+      buffer[j++] = str[i]; 
     }
   }
-  strcpy(str, buffer);
+  strcpy(str, buffer); 
 }
 
 int main() {
@@ -23,3 +23,7 @@ int main() {
 
   return 0;
 }
+
+// user input 2 values 
+// store these values in pointer
+// ouput multiple of these 2 values
