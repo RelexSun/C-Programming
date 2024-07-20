@@ -49,7 +49,7 @@ int main() {
     printf("Enter street: ");
     scanf("%s", products[i].seller.address.st);
     printf("Enter city: ");
-    scanf();
+    scanf("%s", products[i].seller.address.city);
 
     int invalidColor = 1;
     for (int j = 0; j < 5; j++) {
